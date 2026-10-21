@@ -1,0 +1,150 @@
+:root {
+  --purple: #C5ABFD;
+  --black: #282828;
+  --white: #F5F2E6;
+  --green: #D6F92E;
+  --blue: #70D4FC;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: var(--purple);
+}
+body.is-loading {
+  overflow: hidden;
+}
+.preloader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    opacity 0.55s ease,
+    visibility 0.55s ease;
+}
+.preloader.is-done {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.preloader__visual {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+/* .preloader__visual img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+} */
+.preloader__number {
+  position: absolute;
+  left: 4%;
+  bottom: 4%;
+  min-width: 130px;
+  color: var(--black);
+  font-size: 5.556vw;
+  letter-spacing: -0.07em;
+  line-height: 1;
+  font-family: 'Arial-Narrow';
+  font-size: 80px;
+  line-height: 80%;
+  letter-spacing: -0.04em;
+}
+.preloader_card__bg {
+  border: 3px solid var(--black);
+  border-radius: 32px;
+  width: 370px;
+  height: 555px;
+  background-color: var(--black);
+}
+.preloader_card {
+  width: 383px;
+  height: 564px;
+}
+.preloader_card img {
+  width: 370px;
+  height: 555px;
+  border: 3px solid var(--black);
+border-radius: 32px;
+}
+/* Запрещаем прокрутку во время загрузки */
+body.is-loading {
+  overflow: hidden;
+}
+
+.preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  overflow: hidden;
+  /* background: твой цвет фона; */
+}
+
+/* Сохраняем собственные позиции и повороты карточек */
+.preloader_card__inner {
+  position: relative;
+  transform: translateY(120vh);
+  opacity: 0;
+  will-change: transform, opacity;
+}
+.preloader_card__inner img {
+  position: absolute;
+}
+
+/* Карточки появляются снизу вверх */
+.preloader_card.is-visible .preloader_card__inner {
+  animation: cardAppear 0.65s cubic-bezier(.22, 1, .36, 1)
+    forwards;
+}
+
+@keyframes cardAppear {
+  from {
+    transform: translateY(120vh);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Финальная анимация: карточки уезжают вниз */
+.preloader.is-exiting .preloader_card__inner {
+  animation: cardExit 0.8s cubic-bezier(.65, 0, .35, 1)
+    forwards;
+}
+
+@keyframes cardExit {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  to {
+    transform: translateY(105vh);
+    opacity: 1;
+  }
+}
+
+/* Исчезновение самого загрузочного экрана */
+.preloader.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.25s ease, visibility 0.25s;
+}
