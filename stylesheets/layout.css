@@ -24,6 +24,7 @@ body.is-loading {
   overflow: hidden;
 }
 .preloader {
+  background-color: var(--purple);
   position: fixed;
   width: 100%;
   height: 100%;
@@ -68,7 +69,6 @@ body.is-loading {
   width: 383px;
   height: 564px;
 }
-/* Запрещаем прокрутку во время загрузки */
 body.is-loading {
   overflow: hidden;
 }
@@ -165,4 +165,86 @@ body.is-loading {
   visibility: hidden;
   pointer-events: none;
   transition: opacity 0.25s ease, visibility 0.25s;
+}
+.main {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  height: 100dvh;
+  overflow: hidden;
+  background: var(--purple);
+}
+
+.main__cards {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.main__card {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 383px;
+  height: 564px;
+}
+
+.main__card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.main__card-inner img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 3px solid var(--black);
+  border-radius: 32px;
+  z-index: 2;
+}
+
+.main__card-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 3px solid var(--black);
+  border-radius: 32px;
+  background: var(--black);
+  transform: translate(9px, 9px);
+  z-index: 1;
+}
+
+.main__card-bg--1 {
+  transform: translate(-6px, 0);
+  rotate: 1deg;
+}
+
+.main__card-bg--3 {
+  transform: translate(-9px, -4px);
+  rotate: -1deg;
+}
+
+.main__card--1 {
+  transform:
+    translate(calc(-50% - 185px), 65%)
+    rotate(-12deg);
+  z-index: 1;
+}
+
+.main__card--2 {
+  transform:
+    translate(-50%, 60%)
+    rotate(5deg);
+  z-index: 2;
+}
+
+.main__card--3 {
+  transform:
+    translate(calc(-50% + 185px), 65%)
+    rotate(-3deg);
+  z-index: 3;
 }
