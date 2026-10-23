@@ -1,0 +1,26 @@
+@media (max-width: 767px) {
+  .preloader_card {
+    width: min(65vw, 280px);
+    height: auto;
+    aspect-ratio: 370 / 555;
+  }
+
+  .preloader_card--1 {
+    transform: translate(-58%, -50%) rotate(-10deg);
+  }
+
+  .preloader_card--2 {
+    transform: translate(-48%, -50%) rotate(4deg);
+  }
+
+  .preloader_card--3 {
+    transform: translate(-38%, -50%) rotate(-3deg);
+  }
+
+  .preloader__number {
+    left: 5%;
+    bottom: 4%;
+    font-size: 48px;
+    line-height: 1;
+  }
+}

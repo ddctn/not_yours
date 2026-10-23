@@ -12,6 +12,12 @@ html {
   scroll-behavior: smooth;
 }
 body {
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: var(--purple);
 }
 body.is-loading {
@@ -22,7 +28,7 @@ body.is-loading {
   width: 100%;
   height: 100%;
   inset: 0;
-  z-index: 100;
+  z-index: 9999;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -36,20 +42,11 @@ body.is-loading {
   pointer-events: none;
 }
 .preloader__visual {
-  display: flex;
   width: 100%;
   height: 100%;
   position: relative;
   overflow: hidden;
 }
-/* .preloader__visual img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-} */
 .preloader__number {
   position: absolute;
   left: 4%;
@@ -64,48 +61,72 @@ body.is-loading {
   line-height: 80%;
   letter-spacing: -0.04em;
 }
-.preloader_card__bg {
-  border: 3px solid var(--black);
-  border-radius: 32px;
-  width: 370px;
-  height: 555px;
-  background-color: var(--black);
-}
 .preloader_card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
   width: 383px;
   height: 564px;
-}
-.preloader_card img {
-  width: 370px;
-  height: 555px;
-  border: 3px solid var(--black);
-border-radius: 32px;
 }
 /* Запрещаем прокрутку во время загрузки */
 body.is-loading {
   overflow: hidden;
 }
 
-.preloader {
-  position: fixed;
-  inset: 0;
-  z-index: 9999;
-  overflow: hidden;
-  /* background: твой цвет фона; */
+.preloader_card--1 {
+  transform: translate(calc(-50% - 185px), -50%) rotate(-12deg);
+  z-index: 1;
 }
 
-/* Сохраняем собственные позиции и повороты карточек */
+.preloader_card--2 {
+  transform: translate(-50%, -50%) rotate(5deg);
+  z-index: 2;
+}
+
+.preloader_card--3 {
+  transform: translate(calc(-50% + 185px), -50%) rotate(-3deg);
+  z-index: 3;
+}
+
 .preloader_card__inner {
   position: relative;
+  width: 100%;
+  height: 100%;
   transform: translateY(120vh);
   opacity: 0;
   will-change: transform, opacity;
 }
+
 .preloader_card__inner img {
   position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 3px solid var(--black);
+  border-radius: 32px;
+  z-index: 2;
 }
+.preloader_card__bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 3px solid var(--black);
+  border-radius: 32px;
+  background: var(--black);
 
-/* Карточки появляются снизу вверх */
+  transform: translate(9px, 9px);
+  z-index: 1;
+}
+.preloader_card__bg--1 {
+  transform: translate(-6px, 0px);
+  rotate: 1deg;
+}
+.preloader_card__bg--3 {
+  transform: translate(-9px, -4px);
+  rotate: -1deg;
+}
 .preloader_card.is-visible .preloader_card__inner {
   animation: cardAppear 0.65s cubic-bezier(.22, 1, .36, 1)
     forwards;
@@ -123,7 +144,6 @@ body.is-loading {
   }
 }
 
-/* Финальная анимация: карточки уезжают вниз */
 .preloader.is-exiting .preloader_card__inner {
   animation: cardExit 0.8s cubic-bezier(.65, 0, .35, 1)
     forwards;
@@ -140,8 +160,6 @@ body.is-loading {
     opacity: 1;
   }
 }
-
-/* Исчезновение самого загрузочного экрана */
 .preloader.is-hidden {
   opacity: 0;
   visibility: hidden;
