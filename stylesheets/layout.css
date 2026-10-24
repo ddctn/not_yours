@@ -24,7 +24,10 @@ body.is-loading {
   overflow: hidden;
 }
 .preloader {
-  background-color: var(--purple);
+  background: url(../assets/background.png), var(--purple);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   position: fixed;
   width: 100%;
   height: 100%;
@@ -168,11 +171,18 @@ body.is-loading {
 }
 .main {
   position: relative;
+  display: flex;
+  justify-content: center;
+  padding-top: 2.2vw;
   width: 100%;
   height: 100vh;
   height: 100dvh;
   overflow: hidden;
   background: var(--purple);
+  background: url(../assets/background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .main__cards {
@@ -247,4 +257,25 @@ body.is-loading {
     translate(calc(-50% + 185px), 65%)
     rotate(-3deg);
   z-index: 3;
+}
+
+.menu {
+  display: flex;
+  border: 3px solid var(--black);
+  border-radius: 40px;
+  padding: 20px 40px;
+  width: 364px;
+  height: 66px;
+  background: var(--white);
+  gap: 1.667vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu_item {
+  font-family: 'Arial-Narrow';
+  font-size: 24px;
+  line-height: 110%;
+  letter-spacing: -0.04em;
+  color: var(--black);
 }
