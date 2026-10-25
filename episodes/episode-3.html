@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Эпизод 3 — Не твоё</title>
+     <link rel="stylesheet" href="../stylesheets/global.css" />
+  </head>
+  <body data-correct-answer="myth">
+    <main class="page">
+      <nav class="nav" aria-label="Навигация">
+        <a href="../index.html">Главная</a
+        ><a href="../index.html#about">О проекте</a
+        ><a href="../situations.html">Советы</a>
+      </nav>
+      <section class="scene is-active" data-scene="story">
+        <div class="scene__content">
+          <div class="eyebrow">Эпизод 3 из 5</div>
+          <h1>Эпизод 3</h1>
+          <p>[Вставить текст истории для эпизода 3]</p>
+          <button class="btn" data-next="choice">Дальше</button>
+        </div>
+      </section>
+      <section class="scene" data-scene="choice">
+        <div class="scene__content">
+          <h2>[Вставить вопрос выбора]</h2>
+          <div class="choice-cards">
+            <button
+              type="button"
+              class="choice-card"
+              data-choice="blocked"
+              data-message="[Реплика взрослого для недоступной карты]"
+            >
+              Карта 1
+            </button>
+            <button
+              type="button"
+              class="choice-card"
+              data-choice="blocked"
+              data-message="[Реплика взрослого для недоступной карты]"
+            >
+              Карта 2
+            </button>
+            <button
+              type="button"
+              class="choice-card"
+              data-choice="allowed"
+              data-message="[Реплика взрослого для допустимой карты]"
+            >
+              Карта 3
+            </button>
+          </div>
+          <div
+            class="reaction"
+            data-reaction-box
+            hidden
+            aria-live="polite"
+          ></div>
+          <button
+            class="btn"
+            data-choice-continue
+            data-next="reflection"
+            hidden
+          >
+            Дальше
+          </button>
+        </div>
+      </section>
+      <section class="scene" data-scene="reflection">
+        <div class="scene__content">
+          <div class="eyebrow">Её мысли</div>
+          <h2>Что она почувствовала?</h2>
+          <p>«[Вставить текст рефлексии героини]»</p>
+          <button class="btn" data-next="myth">Дальше</button>
+        </div>
+      </section>
+      <section class="scene" data-scene="myth">
+        <div class="scene__content">
+          <div class="eyebrow">Миф или правда?</div>
+          <h2>[Вставить утверждение для проверки]</h2>
+          <div class="answers">
+            <button class="btn answer" data-answer="myth">Миф</button
+            ><button class="btn answer" data-answer="truth">Правда</button>
+          </div>
+        </div>
+      </section>
+      <section class="scene" data-scene="explanation">
+        <div class="scene__content">
+          <h2 data-answer-title>Разбор</h2>
+          <p>[Вставить объяснение мифа и ссылку на источник]</p>
+          <a class="btn" href="episode-4.html">Следующий эпизод</a>
+        </div>
+      </section>
+      <div class="collected" aria-label="Собранные карты">
+        <span class="collected__card">Кукла</span
+        ><span class="collected__card">Карта эпизода 2</span>
+      </div>
+      <div class="footer-note">Не твоё · Интерактивная история</div>
+    </main>
+    <script src="../js/episode.js" defer></script>
+  </body>
+</html>
