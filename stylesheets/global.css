@@ -113,22 +113,22 @@ body {
   margin: 24px auto 18px;
 }
 .choice-card {
-  width: clamp(90px, 19vw, 190px);
-  aspect-ratio: 3/4.2;
-  border: 3px solid var(--black);
-  border-radius: 20px;
-  box-shadow: 7px 8px 0 var(--black);
-  background: var(--blue);
-  font-size: clamp(14px, 2vw, 23px);
-  font-weight: 700;
-  padding: 12px;
-  transition: transform 0.2s;
+  display: block;
+  width: 250px;
+  aspect-ratio: 383 / 564;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  overflow: visible;
 }
-.choice-card:nth-child(2) {
-  background: var(--pink);
-}
-.choice-card:nth-child(3) {
-  background: var(--green);
+
+.choice-card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  pointer-events: none;
 }
 .choice-card:hover {
   transform: translateY(-6px);
