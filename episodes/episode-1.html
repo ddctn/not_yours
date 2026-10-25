@@ -4,29 +4,53 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Детство — Не твоё</title>
+    <link rel="shortcut icon" href="./assets/close.svg" type="image/x-icon">
     <link rel="stylesheet" href="../stylesheets/global.css" />
+    <link rel="stylesheet" href="../stylesheets/style.css" />
   </head>
   <body data-correct-answer="myth">
-    <main class="page">
-      <nav class="nav" aria-label="Навигация">
-        <a href="../index.html">Главная</a
-        ><a href="../index.html#about">О проекте</a
-        ><a href="../situations.html">Советы</a>
-      </nav>
+    <main class="page main">
+    <nav class="menu" aria-label="Навигация">
+      <a href="./about.html" class="menu_item">о проекте</a>
+      <a href="./episodes/episode-1.html" class="menu_item">история</a>
+      <a href="#" class="menu_item">советы</a>
+    </nav>
       <section class="scene is-active" data-scene="story">
         <div class="scene__content">
-          <div class="eyebrow">Эпизод 1 из 5</div>
-          <h1>Детство</h1>
-          <p>
-            На мой четвёртый день рождения родители отвели меня в магазин
-            игрушек. Я потянулась к большой коробке с конструктором.
-          </p>
-          <button class="btn" data-next="choice">Дальше</button>
+          <section class="scene scene--story is-active" id="story">
+  <div class="story">
+
+    <div class="story__card">
+      <img
+        src="../assets/cards/4yo.png"
+        alt="Девочка мечтает о космическом конструкторе"
+      >
+    </div>
+
+    <div class="story__content">
+      <h1 class="text_h1">Детство</h1>
+
+      <p class="text_m">
+        «На&nbsp;мой&nbsp;четвёртый день рождения родители отвели меня в&nbsp;магазин игрушек. Там&nbsp;было столько всего интересного: конструкторы космических кораблей, разнообразные машинки-трансформеры, фигурки персонажей „Звёздных войн“ с&nbsp;разными костюмами. Родители сказали, что&nbsp;я&nbsp;сама могу выбрать все, что&nbsp;захочу, и&nbsp;я&nbsp;сразу потянулась к&nbsp;большой коробке с&nbsp;конструктором».
+      </p>
+
+      <button
+        type="button"
+        class="story__next text_l"
+        data-next="choice"
+      >
+        Дальше
+      </button>
+    </div>
+
+  </div>
+</section>
+          <button class="btn text_l" data-next="choice">Дальше</button>
         </div>
       </section>
       <section class="scene" data-scene="choice">
         <div class="scene__content">
-          <h2>Какую игрушку выбрать?</h2>
+          <h2 class="text_h2">Какую игрушку выбрать?</h2>
           <div class="choice-cards">
             <button
               type="button"
@@ -79,7 +103,7 @@
             буду собирать конструктор. Но мама была рада, когда я выбрала
             куклу.»
           </p>
-          <button class="btn" data-next="myth">Дальше</button>
+          <button class="btn text_l" data-next="myth">Дальше</button>
         </div>
       </section>
       <section class="scene" data-scene="myth">
@@ -105,7 +129,6 @@
         </div>
       </section>
       <div class="collected" aria-label="Собранные карты"></div>
-      <div class="footer-note">Не твоё · Интерактивная история</div>
     </main>
     <script src="../js/episode.js" defer></script>
   </body>
