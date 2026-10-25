@@ -20,6 +20,14 @@ body {
   align-items: center;
   background: var(--purple);
 }
+.text_h4 {
+  font-family: 'Arial-Narrow';
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 120%;
+  letter-spacing: -0.04em;
+  color: var(--black);
+}
 body.is-loading {
   overflow: hidden;
 }
@@ -172,7 +180,8 @@ body.is-loading {
 .main {
   position: relative;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   padding-top: 2.2vw;
   width: 100%;
   height: 100vh;
@@ -278,4 +287,47 @@ body.is-loading {
   line-height: 110%;
   letter-spacing: -0.04em;
   color: var(--black);
+}
+
+.buttons_block {
+  display: flex;
+  gap: 0.833vw;
+}
+
+.main__start {
+  background-color: var(--green);
+  border-radius: 50rem;
+  border: 3px solid var(--black);
+  padding: 20px 32px;
+  width: 298px;
+  height: 78px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rules-modal__close {
+  background: url(../assets/close.svg), var(--green);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center;
+  border-radius: 50rem;
+  width: 5.417vw;
+  height: 5.417vw;
+  border: 3px solid var(--black);
+}
+
+.main__help {
+  background: url(../assets/help.svg), var(--green);
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: center;
+  border-radius: 50rem;
+  width: 4.444vw;
+  height: 4.444vw;
+  border: 3px solid var(--black);
+}
+
+.main__help:hover {
+  cursor: pointer;
 }

@@ -7,7 +7,7 @@
       name="description"
       content="Не твоё — социальный проект о стереотипах и выборе профессии."
     />
-    <title>Не твоё? — социальный проект</title>
+    <title>Не твоё — социальный проект</title>
     <link rel="stylesheet" href="./stylesheets/style.css" />
     <script src="./js/main.js" defer></script>
   </head>
@@ -43,11 +43,20 @@
   <main class="main">
     <div class="menu">
       <a href="./about.html" class="menu_item">о проекте</a>
-      <a href="./episodes/episode-1.html" class="menu_item">игра</a>
+      <a href="./episodes/episode-1.html" class="menu_item">история</a>
       <a href="#" class="menu_item">советы</a>
     </div>
+    <h1>Не твоё</h1>
+    <h3>— фраза, с которой начинается выбор</h3>
+    <div class="buttons_block">
+      <a href="./episodes/episode-1.html" class="main__start text_h4">Начать историю</a>
+      <button
+        type="button"
+        class="main__help"
+        id="openRules"
+        aria-label="Правила игры"></button>
+    </div>
     <div class="main__cards">
-
       <div class="main__card main__card--1">
         <div class="main__card-inner">
           <img src="./assets/cards/hand-down.png" alt="">
@@ -70,6 +79,24 @@
       </div>
 
     </div>
-</main>
+  </main>
+  <dialog class="rules-modal" id="rulesModal" aria-labelledby="rulesTitle">
+  <div class="rules-modal__content">
+    <h2 id="rulesTitle">Правила игры</h2>
+
+    <p>
+      Вам предстоит пройти путь девушки от&nbsp;детства до&nbsp;выбора профессии. На&nbsp;каждом этапе вы&nbsp;выбираете одну из&nbsp;карт&nbsp;— реакцию взрослого на&nbsp;её&nbsp;интересы и&nbsp;решения. После&nbsp;каждого выбора вы&nbsp;увидите, как&nbsp;он&nbsp;может повлиять на&nbsp;её&nbsp;восприятие себя и&nbsp;своих возможностей.
+    </p>
+
+    <button
+      type="button"
+      class="rules-modal__close"
+      id="closeRules"
+      aria-label="Закрыть правила"
+    >
+    </button>
+  </div>
+</dialog>
+<script src="./js/rules.js" defer></script>
   </body>
 </html>

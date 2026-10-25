@@ -49,4 +49,38 @@
       translate(calc(-50% + 45px), 70%)
       rotate(-3deg);
   }
+  .main__buttons {
+    top: 60%;
+    gap: 6px;
+  }
+
+  .main__start {
+    font-size: 18px;
+    padding: 12px 18px;
+  }
+
+  .main__help {
+    width: 48px;
+    height: 48px;
+    font-size: 26px;
+  }
+
+  .rules-modal {
+    width: calc(100% - 32px);
+    max-height: 85dvh;
+    border-radius: 20px;
+  }
+
+  .rules-modal__content {
+    padding: 24px 20px;
+  }
+
+  .rules-modal h2 {
+    font-size: 36px;
+  }
+
+  .rules-modal p {
+    font-size: 16px;
+    line-height: 1.2;
+  }
 }
