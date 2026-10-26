@@ -4,20 +4,22 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Детство — Не твоё</title>
-    <link rel="shortcut icon" href="./assets/close.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/close.svg" type="image/x-icon" />
     <link rel="stylesheet" href="../stylesheets/global.css" />
     <link rel="stylesheet" href="../stylesheets/style.css" />
   </head>
   <body data-correct-answer="myth">
     <main class="page main">
-    <nav class="menu" aria-label="Навигация">
-      <a href="./about.html" class="menu_item">о проекте</a>
-      <a href="./episodes/episode-1.html" class="menu_item">история</a>
-      <a href="#" class="menu_item">разборы</a>
-    </nav>
-      <section class="scene is-active" data-scene="story">
-        <div class="scene__content">
-          <section class="scene scene--story is-active" id="story">
+      <nav class="menu" aria-label="Навигация">
+        <a href="../about.html" class="menu_item">о проекте</a>
+        <a href="../index.html" class="menu_item">история</a>
+        <a href="../situations.html" class="menu_item">разборы</a>
+      </nav>
+      <section
+  class="scene scene--story is-active"
+  data-scene="story"
+  id="story"
+>
   <div class="story">
 
     <div class="story__card">
@@ -31,7 +33,14 @@
       <h1 class="text_h1">Детство</h1>
 
       <p class="text_m">
-        «На&nbsp;мой&nbsp;четвёртый день рождения родители отвели меня в&nbsp;магазин игрушек. Там&nbsp;было столько всего интересного: конструкторы космических кораблей, разнообразные машинки-трансформеры, фигурки персонажей „Звёздных войн“ с&nbsp;разными костюмами. Родители сказали, что&nbsp;я&nbsp;сама могу выбрать все, что&nbsp;захочу, и&nbsp;я&nbsp;сразу потянулась к&nbsp;большой коробке с&nbsp;конструктором».
+        «На мой четвёртый день рождения родители отвели меня
+        в магазин игрушек. Там было столько всего интересного:
+        конструкторы космических кораблей, разнообразные
+        машинки-трансформеры, фигурки персонажей
+        „Звёздных войн“ с разными костюмами.
+        Родители сказали, что я сама могу выбрать всё,
+        что захочу, и я сразу потянулась к большой
+        коробке с конструктором».
       </p>
 
       <button
@@ -45,53 +54,45 @@
 
   </div>
 </section>
-          <button class="btn text_l" data-next="choice">Дальше</button>
-        </div>
-      </section>
-      <section class="scene" data-scene="choice">
-        <div class="scene__content">
-          <h2 class="text_h2">Какую игрушку выбрать?</h2>
-          <div class="choice-cards">
+      <section class="scene scene--choice" data-scene="choice" id="choice">
+        <div class="choice">
+          <h2 class="choice__title text_h1">Какую игрушку выбрать?</h2>
+
+          <div class="choice__cards">
             <button
               type="button"
-              class="choice-card"
+              class="choice-card choice-card--1"
               data-choice="blocked"
               data-message="Ты ещё маленькая, тебе будет сложно такое собрать. Давай посмотрим что-нибудь другое."
               aria-label="Конструктор"
             >
               <img src="../assets/cards/constuctor.png" alt="" />
             </button>
+
             <button
               type="button"
-              class="choice-card"
+              class="choice-card choice-card--2"
               data-choice="allowed"
               data-message="Вот, посмотри какая красивая! На ней ты сможешь научиться делать причёски."
+              aria-label="Кукла"
             >
               <img src="../assets/cards/doll.png" alt="" />
             </button>
+
             <button
               type="button"
-              class="choice-card"
+              class="choice-card choice-card--3"
               data-choice="blocked"
-              data-message="Может, выберем что-нибудь другое?"
+              data-message="Машинки — это для мальчиков. Давай посмотрим что-нибудь другое."
+              aria-label="Машинка"
             >
               <img src="../assets/cards/car.png" alt="" />
             </button>
           </div>
-          <div
-            class="reaction"
-            data-reaction-box
-            hidden
-            aria-live="polite"
-          ></div>
-          <button
-            class="btn"
-            data-choice-continue
-            data-next="reflection"
-            hidden
-          >
-            Дальше
-          </button>
+
+          <div class="choice__bubble" id="choiceBubble">
+            <p class="text_m" id="choiceBubbleText"></p>
+          </div>
         </div>
       </section>
       <section class="scene" data-scene="reflection">
