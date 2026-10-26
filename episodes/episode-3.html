@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../stylesheets/global.css" />
     <link rel="stylesheet" href="../stylesheets/style.css" />
   </head>
-  <body data-correct-answer="myth">
+  <body data-correct-answer="truth">
     <main class="page main">
       <nav class="menu" aria-label="Навигация">
         <a href="../about.html" class="menu_item">о проекте</a>
@@ -23,16 +23,16 @@
         <div class="story">
           <div class="story__card">
             <img
-              src="../assets/cards/10yo.png"
-              alt="Девочка мечтает о космическом конструкторе"
+              src="../assets/cards/12yo.png"
+              alt=""
             />
           </div>
 
           <div class="story__content">
-            <h1 class="text_h1">Школа</h1>
+            <h1 class="text_h1">Школьный кружок</h1>
 
             <p class="text_m">
-              «В&nbsp;пятом классе мы&nbsp;начали изучать геометрию. Я&nbsp;хорошо понимала объяснения учительницы и&nbsp;быстро решала задачки в&nbsp;тетради, и&nbsp;пара моих одноклассников тоже&nbsp;отлично справлялись. Когда она&nbsp;спрашивала, кто&nbsp;может показать решение у&nbsp;доски, мы&nbsp;одновременно поднимали руки. Но&nbsp;она&nbsp;почти никогда не&nbsp;вызывала к&nbsp;доске меня».
+              «Я училась в хорошей школе, где было довольно много разнообразных кружков, на один из которых можно было ходить бесплатно, а набор осуществлялся каждый год среди учеников седьмого класса. Сильнее всего мне хотелось попасть на астрономический: мне с детства нравились передачи про космос».
             </p>
 
             <button type="button" class="story__next text_l" data-next="choice">
@@ -43,37 +43,37 @@
       </section>
       <section class="scene scene--choice" data-scene="choice" id="choice">
         <div class="choice">
-          <h2 class="choice__title text_h1">Как поступить?</h2>
+          <h2 class="choice__title text_h1">Что выбрать?</h2>
 
           <div class="choice__cards">
             <button
               type="button"
               class="choice-card choice-card--1"
-              data-choice="blocked"
-              data-message="«Давай нам лучше Ваня покажет, а ты сравни своё решение»."
-              aria-label="Поднять руку"
+              data-choice="allowed"
+              data-message="«Отличный выбор! У тебя же хорошо с сочинениями»."
+              aria-label="Литературный"
             >
-              <img src="../assets/cards/hand-up.png" alt="" />
+              <img src="../assets/cards/litre.png" alt="" />
             </button>
 
             <button
               type="button"
               class="choice-card choice-card--2"
               data-choice="blocked"
-              data-message="«Кто тебя спрашивал? Сядь на место, нужно соблюдать правила»."
-              aria-label="Выйти к доске"
+              data-message="Учительница сказала, что я вряд ли справлюсь, ведь для этого нужно хорошо знать физику и математику. Посоветовала выбрать гуманитарный профиль."
+              aria-label="Астрономический"
             >
-              <img src="../assets/cards/walk.png" alt="" />
+              <img src="../assets/cards/astronomy.png" alt="" />
             </button>
 
             <button
               type="button"
               class="choice-card choice-card--3"
-              data-choice="allowed"
-              data-message="Учительница как обычно вызвала к доске Ваню и он получил дополнительную пятёрку."
-              aria-label="Не поднимать руку"
+              data-choice="blocked"
+              data-message="«Ну, химия — это ещё ничего, там можно и в медицину пойти. Но подумай получше: может, тебе лучше на литературу?»"
+              aria-label="Химический"
             >
-              <img src="../assets/cards/hand-down.png" alt="" />
+              <img src="../assets/cards/chem.png" alt="" />
             </button>
           </div>
 
@@ -89,26 +89,27 @@
           <div class="reflection__cards">
             <img
               class="reflection__card reflection__card--1"
-              src="../assets/cards/hand-up.png"
+              src="../assets/cards/litre.png"
               alt=""
             />
 
             <img
               class="reflection__card reflection__card--2"
-              src="../assets/cards/walk.png"
+              src="../assets/cards/astronomy.png"
               alt=""
             />
 
             <img
               class="reflection__card reflection__card--3"
-              src="../assets/cards/hand-down.png"
+              src="../assets/cards/chem.png"
               alt=""
             />
           </div>
 
           <div class="reflection__collected">
-            <img src="../assets/cards/doll.png" alt="Кукла" />
+            <img src="../assets/cards/doll.png" alt="" />
             <img src="../assets/cards/hand-down.png" alt="" />
+            <img src="../assets/cards/litre.png" alt="" />
           </div>
         </div>
 
@@ -116,7 +117,7 @@
 
         <div class="reflection__popup">
           <p class="text_m">
-            «Мне показалось, что не поднимать руку будет правильно: все равно меня не спрашивают. В следующий раз я просто смотрела, как отвечают мальчики, у них это как‑то легко получалось».
+            «Я записалась на литературу, этот выбор поддержала учительница. Наверное, точные науки не совсем мне подходят».
           </p>
 
           <button
@@ -132,18 +133,19 @@
         <div class="episode__collected">
           <img src="../assets/cards/doll.png" alt="Кукла" />
           <img src="../assets/cards/hand-down.png" alt="" />
+          <img src="../assets/cards/litre.png" alt="" />
         </div>
 
         <div class="myth__content">
           <h2 class="text_h1">
-            Учителя одинаково часто вызывают к доске мальчиков и девочек
+            Разрыв в математических способностях между мальчиками и девочками составляет 9 баллов по PISA в пользу мальчиков
           </h2>
 
           <div class="myth__buttons">
             <button
               type="button"
               class="myth__button myth__button--myth text_l"
-              data-answer="truth"
+              data-answer="myth"
             >
               Миф
             </button>
@@ -151,7 +153,7 @@
             <button
               type="button"
               class="myth__button myth__button--truth text_l"
-              data-answer="myth"
+              data-answer="truth"
             >
               Правда
             </button>
@@ -162,6 +164,7 @@
         <div class="episode__collected">
           <img src="../assets/cards/doll.png" alt="Кукла" />
           <img src="../assets/cards/hand-down.png" alt="" />
+          <img src="../assets/cards/litre.png" alt="" />
         </div>
 
         <div class="explanation">
@@ -169,7 +172,7 @@
             <h2 class="text_h1" data-answer-title>Правильно! Это&nbsp;миф</h2>
 
             <p class="text_m">
-              Исследования показывают, что&nbsp;учителя чаще вызывают мальчиков, дают им&nbsp;больше времени на&nbsp;ответ и&nbsp;выше оценивают их&nbsp;работу при&nbsp;одинаковом качестве. Девочки чаще получают комментарии о&nbsp;«старании», мальчики&nbsp;— о&nbsp;«способностях».
+              Это действительно так, однако 9 баллов — это менее 2% от среднего балла (472), а в странах с высоким гендерным равенством разрыв вовсе исчезает. В Ямайке и Доминиканской Республике девочки, наоборот, опережают мальчиков.
             </p>
           </div>
 
