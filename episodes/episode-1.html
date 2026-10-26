@@ -16,44 +16,36 @@
         <a href="../situations.html" class="menu_item">разборы</a>
       </nav>
       <section
-  class="scene scene--story is-active"
-  data-scene="story"
-  id="story"
->
-  <div class="story">
-
-    <div class="story__card">
-      <img
-        src="../assets/cards/4yo.png"
-        alt="Девочка мечтает о космическом конструкторе"
+        class="scene scene--story is-active"
+        data-scene="story"
+        id="story"
       >
-    </div>
+        <div class="story">
+          <div class="story__card">
+            <img
+              src="../assets/cards/4yo.png"
+              alt="Девочка мечтает о космическом конструкторе"
+            />
+          </div>
 
-    <div class="story__content">
-      <h1 class="text_h1">Детство</h1>
+          <div class="story__content">
+            <h1 class="text_h1">Детство</h1>
 
-      <p class="text_m">
-        «На мой четвёртый день рождения родители отвели меня
-        в магазин игрушек. Там было столько всего интересного:
-        конструкторы космических кораблей, разнообразные
-        машинки-трансформеры, фигурки персонажей
-        „Звёздных войн“ с разными костюмами.
-        Родители сказали, что я сама могу выбрать всё,
-        что захочу, и я сразу потянулась к большой
-        коробке с конструктором».
-      </p>
+            <p class="text_m">
+              «На мой четвёртый день рождения родители отвели меня в магазин
+              игрушек. Там было столько всего интересного: конструкторы
+              космических кораблей, разнообразные машинки-трансформеры, фигурки
+              персонажей „Звёздных войн“ с разными костюмами. Родители сказали,
+              что я сама могу выбрать всё, что захочу, и я сразу потянулась к
+              большой коробке с конструктором».
+            </p>
 
-      <button
-        type="button"
-        class="story__next text_l"
-        data-next="choice"
-      >
-        Дальше
-      </button>
-    </div>
-
-  </div>
-</section>
+            <button type="button" class="story__next text_l" data-next="choice">
+              Дальше
+            </button>
+          </div>
+        </div>
+      </section>
       <section class="scene scene--choice" data-scene="choice" id="choice">
         <div class="choice">
           <h2 class="choice__title text_h1">Какую игрушку выбрать?</h2>
@@ -95,16 +87,52 @@
           </div>
         </div>
       </section>
-      <section class="scene" data-scene="reflection">
-        <div class="scene__content">
-          <div class="eyebrow">Её мысли</div>
-          <h2>Что она почувствовала?</h2>
-          <p>
-            «Я помню, что немного расстроилась тогда: я уже представляла, как
-            буду собирать конструктор. Но мама была рада, когда я выбрала
-            куклу.»
+      <section class="scene scene--reflection" data-scene="reflection">
+        <div class="reflection__background">
+          <h2 class="choice__title title_h1">Какую игрушку выбрать?</h2>
+
+          <div class="reflection__cards">
+            <img
+              class="reflection__card reflection__card--1"
+              src="../assets/cards/constuctor.png"
+              alt=""
+            />
+
+            <img
+              class="reflection__card reflection__card--2"
+              src="../assets/cards/doll.png"
+              alt=""
+            />
+
+            <img
+              class="reflection__card reflection__card--3"
+              src="../assets/cards/car.png"
+              alt=""
+            />
+          </div>
+
+          <div class="reflection__collected">
+            <img src="../assets/cards/doll.png" alt="Кукла" />
+          </div>
+        </div>
+
+        <div class="reflection__overlay" aria-hidden="true"></div>
+
+        <div class="reflection__popup">
+          <p class="text_m">
+            «Я помню, что немного расстроилась тогда, ведь уже представила, как
+            буду собирать конструктор по вечерам, а потом он будет красоваться
+            на полке. Но мама была рада, когда я всё же выбрала куклу. Наверное,
+            она права, кукла — это то, что мне действительно нужно».
           </p>
-          <button class="btn text_l" data-next="myth">Дальше</button>
+
+          <button
+            type="button"
+            class="reflection__next text_l"
+            data-next="myth"
+          >
+            Дальше
+          </button>
         </div>
       </section>
       <section class="scene" data-scene="myth">
