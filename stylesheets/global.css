@@ -234,7 +234,7 @@ body {
 }
 .choice-card img {
   width: 247px;
-height: 371px;
+  height: 371px;
   border-radius: 20px;
   border: 2px solid var(--black);
 }
@@ -355,8 +355,7 @@ height: 371px;
   background: transparent;
   cursor: pointer;
 
-  transition:
-    filter 0.25s ease;
+  transition: filter 0.25s ease;
 }
 
 .choice-card img {
@@ -425,10 +424,19 @@ height: 371px;
 }
 
 @keyframes choiceShake {
-  0%, 100% { rotate: 0deg; }
-  25% { rotate: -5deg; }
-  50% { rotate: 5deg; }
-  75% { rotate: -3deg; }
+  0%,
+  100% {
+    rotate: 0deg;
+  }
+  25% {
+    rotate: -5deg;
+  }
+  50% {
+    rotate: 5deg;
+  }
+  75% {
+    rotate: -3deg;
+  }
 }
 .choice-card.is-selected {
   z-index: 15;
@@ -467,7 +475,9 @@ height: 371px;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease;
 }
 
 .choice:has(.choice-card.is-selected)::before {

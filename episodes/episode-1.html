@@ -32,12 +32,7 @@
             <h1 class="text_h1">Детство</h1>
 
             <p class="text_m">
-              «На мой четвёртый день рождения родители отвели меня в магазин
-              игрушек. Там было столько всего интересного: конструкторы
-              космических кораблей, разнообразные машинки-трансформеры, фигурки
-              персонажей „Звёздных войн“ с разными костюмами. Родители сказали,
-              что я сама могу выбрать всё, что захочу, и я сразу потянулась к
-              большой коробке с конструктором».
+              «На&nbsp;мой&nbsp;четвёртый день рождения родители отвели меня в&nbsp;магазин игрушек. Там&nbsp;было столько всего интересного: конструкторы космических кораблей, разнообразные машинки-трансформеры, фигурки персонажей „Звёздных войн“ с&nbsp;разными костюмами. Родители сказали, что&nbsp;я&nbsp;сама могу выбрать все, что&nbsp;захочу, и&nbsp;я&nbsp;сразу потянулась к&nbsp;большой коробке с&nbsp;конструктором».
             </p>
 
             <button type="button" class="story__next text_l" data-next="choice">
@@ -55,7 +50,7 @@
               type="button"
               class="choice-card choice-card--1"
               data-choice="blocked"
-              data-message="Ты ещё маленькая, тебе будет сложно такое собрать. Давай посмотрим что-нибудь другое."
+              data-message="Ты&nbsp;ещё&nbsp;маленькая, тебе&nbsp;будет сложно такое собрать. Давай посмотрим что-нибудь другое."
               aria-label="Конструктор"
             >
               <img src="../assets/cards/constuctor.png" alt="" />
@@ -65,7 +60,7 @@
               type="button"
               class="choice-card choice-card--2"
               data-choice="allowed"
-              data-message="Вот, посмотри какая красивая! На ней ты сможешь научиться делать причёски."
+              data-message="Вот,&nbsp;посмотри какая красивая! На&nbsp;ней&nbsp;ты&nbsp;сможешь научиться делать причёски."
               aria-label="Кукла"
             >
               <img src="../assets/cards/doll.png" alt="" />
@@ -75,7 +70,7 @@
               type="button"
               class="choice-card choice-card--3"
               data-choice="blocked"
-              data-message="Машинки — это для мальчиков. Давай посмотрим что-нибудь другое."
+              data-message="Машинки —&nbsp;это&nbsp;для&nbsp;мальчиков. Давай посмотрим что-нибудь&nbsp;другое."
               aria-label="Машинка"
             >
               <img src="../assets/cards/car.png" alt="" />
@@ -89,7 +84,7 @@
       </section>
       <section class="scene scene--reflection" data-scene="reflection">
         <div class="reflection__background">
-          <h2 class="choice__title title_h1">Какую игрушку выбрать?</h2>
+          <h2 class="choice__title text_h1">Какую игрушку выбрать?</h2>
 
           <div class="reflection__cards">
             <img
@@ -120,10 +115,7 @@
 
         <div class="reflection__popup">
           <p class="text_m">
-            «Я помню, что немного расстроилась тогда, ведь уже представила, как
-            буду собирать конструктор по вечерам, а потом он будет красоваться
-            на полке. Но мама была рада, когда я всё же выбрала куклу. Наверное,
-            она права, кукла — это то, что мне действительно нужно».
+            «Я&nbsp;помню, что&nbsp;немного расстроилась тогда, ведь&nbsp;уже&nbsp;представила как&nbsp;буду собирать конструктор по&nbsp;вечерам, а&nbsp;потом он&nbsp;будет красоваться на&nbsp;полке. Но&nbsp;мама была рада, когда я&nbsp;все&nbsp;же&nbsp;выбрала куклу. Наверное, она&nbsp;права, кукла&nbsp;— это&nbsp;то, что&nbsp;мне&nbsp;действительно нужно».
           </p>
 
           <button
@@ -135,26 +127,50 @@
           </button>
         </div>
       </section>
-      <section class="scene" data-scene="myth">
-        <div class="scene__content">
-          <div class="eyebrow">Миф или правда?</div>
-          <h2>
-            Девочки от природы меньше интересуются техникой, чем мальчики.
+      <section class="scene scene--myth" data-scene="myth">
+        <div class="episode__collected">
+          <img src="../assets/cards/doll.png" alt="Кукла" />
+        </div>
+
+        <div class="myth__content">
+          <h2 class="text_h1">
+            Девочки от&nbsp;природы меньше интересуются техникой, чем&nbsp;мальчики
           </h2>
-          <div class="answers">
-            <button class="btn answer" data-answer="myth">Миф</button
-            ><button class="btn answer" data-answer="truth">Правда</button>
+
+          <div class="myth__buttons">
+            <button
+              type="button"
+              class="myth__button myth__button--myth text_l"
+              data-answer="myth"
+            >
+              Миф
+            </button>
+
+            <button
+              type="button"
+              class="myth__button myth__button--truth text_l"
+              data-answer="truth"
+            >
+              Правда
+            </button>
           </div>
         </div>
       </section>
-      <section class="scene" data-scene="explanation">
-        <div class="scene__content">
-          <h2 data-answer-title>Разбор</h2>
-          <p>
-            [Здесь вставить проверенный текст разбора мифа и ссылки на
-            исследования.]
-          </p>
-          <a class="btn" href="episode-2.html">Следующий эпизод</a>
+      <section class="scene scene--explanation" data-scene="explanation">
+        <div class="episode__collected">
+          <img src="../assets/cards/doll.png" alt="Кукла" />
+        </div>
+
+        <div class="explanation">
+          <div class="explanation__content">
+            <h2 class="text_h1" data-answer-title>Правильно! Это&nbsp;миф</h2>
+
+            <p class="text_m">
+              Исследования показывают, что&nbsp;учителя чаще вызывают мальчиков, дают им&nbsp;больше времени на&nbsp;ответ и&nbsp;выше оценивают их&nbsp;работу при&nbsp;одинаковом качестве. Девочки чаще получают комментарии о&nbsp;«старании», мальчики&nbsp;— о&nbsp;«способностях».
+            </p>
+          </div>
+
+          <a class="explanation__next text_l" href="episode-2.html"> Дальше </a>
         </div>
       </section>
       <div class="collected" aria-label="Собранные карты"></div>

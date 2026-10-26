@@ -1,12 +1,8 @@
-
 (() => {
-
   const scenes = [...document.querySelectorAll("[data-scene]")];
 
   function showScene(name) {
-    const target = scenes.find(
-      (scene) => scene.dataset.scene === name
-    );
+    const target = scenes.find((scene) => scene.dataset.scene === name);
 
     if (!target) {
       console.error(`Экран "${name}" не найден. Проверь data-scene в HTML.`);
@@ -69,7 +65,6 @@
 
   choiceCards.forEach((card) => {
     card.addEventListener("click", () => {
-
       if (choiceLocked) return;
 
       const message = card.dataset.message || "";
@@ -101,19 +96,18 @@
 
   document.querySelectorAll("[data-answer]").forEach((button) => {
     button.addEventListener("click", () => {
-
       const title = document.querySelector("[data-answer-title]");
 
-      const correctAnswer =
-        document.body.dataset.correctAnswer || "myth";
+      const correctAnswer = document.body.dataset.correctAnswer || "myth";
 
-      const isCorrect =
-        button.dataset.answer === correctAnswer;
+      const isCorrect = button.dataset.answer === correctAnswer;
 
       if (title) {
+        const answerName = correctAnswer === "myth" ? "миф" : "правда";
+
         title.textContent = isCorrect
-          ? "Правильно! Это миф."
-          : "Нет, это миф.";
+          ? `Правильно! Это ${answerName}`
+          : `Не совсем! Это ${answerName}`;
       }
 
       showScene("explanation");
@@ -121,5 +115,4 @@
   });
 
   showScene("story");
-
 })();

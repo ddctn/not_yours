@@ -81,7 +81,7 @@
   .text_m {
     font-size: 20px;
     line-height: 110%;
-letter-spacing: -0.02em;
+    letter-spacing: -0.02em;
   }
   .text_h3 {
     font-size: 28px;
@@ -280,7 +280,7 @@ letter-spacing: -0.02em;
     padding: 0px;
     z-index: 20;
   }
-   .reflection__card {
+  .reflection__card {
     width: min(52vw, 220px);
   }
 
@@ -323,6 +323,50 @@ letter-spacing: -0.02em;
   }
 
   .reflection__next {
+    flex-shrink: 0;
+  }
+
+  .episode__collected {
+    top: 12%;
+    left: 4%;
+  }
+
+  .episode__collected img {
+    width: 45px;
+  }
+
+  .myth__content,
+  .explanation__content {
+    width: calc(100% - 32px);
+    border-radius: 20px;
+  }
+
+  .myth__content {
+    padding: 28px 18px;
+    gap: 24px;
+  }
+
+  .myth__buttons {
+    gap: 8px;
+  }
+
+  .myth__button {
+    padding: 10px 20px;
+  }
+
+  .explanation {
+    gap: 22px;
+  }
+
+  .explanation__content {
+    padding: 26px 18px;
+    gap: 18px;
+    max-height: 72dvh;
+    overflow-y: auto;
+  }
+
+  .explanation__next {
+    padding: 12px 28px;
     flex-shrink: 0;
   }
 }
