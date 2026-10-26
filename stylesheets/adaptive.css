@@ -79,6 +79,7 @@
     font-size: 40px;
   }
   .text_m {
+    font-family: 'Onest';
     font-size: 20px;
     line-height: 110%;
     letter-spacing: -0.02em;
@@ -327,12 +328,13 @@
   }
 
   .episode__collected {
-    top: 12%;
+    top: 93%;
     left: 4%;
   }
 
   .episode__collected img {
-    width: 45px;
+    width: 95px;
+
   }
 
   .myth__content,

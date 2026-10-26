@@ -2,3 +2,8 @@
   font-family: 'Arial-Narrow';
   src: url(../fonts/Arial-Narrow.ttf);
 }
+
+@font-face {
+  font-family: 'Onest';
+  src: url(../fonts/OnestRegular1602-hint.woff);
+}
