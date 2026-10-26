@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Эпизод 4 — Не твоё</title>
-    <link rel="shortcut icon" href="./assets/close.svg" type="image/x-icon">
+    <title>Школа — Не твоё</title>
+    <link rel="shortcut icon" href="../assets/favicon.svg" type="image/x-icon" />
     <link rel="stylesheet" href="../stylesheets/global.css" />
     <link rel="stylesheet" href="../stylesheets/style.css" />
   </head>
@@ -15,90 +15,174 @@
         <a href="../index.html" class="menu_item">история</a>
         <a href="../situations.html" class="menu_item">разборы</a>
       </nav>
-      <section class="scene is-active" data-scene="story">
-        <div class="scene__content">
-          <div class="eyebrow">Эпизод 4 из 5</div>
-          <h1>Эпизод 4</h1>
-          <p>[Вставить текст истории для эпизода 4]</p>
-          <button class="btn" data-next="choice">Дальше</button>
-        </div>
-      </section>
-      <section class="scene" data-scene="choice">
-        <div class="scene__content">
-          <h2>[Вставить вопрос выбора]</h2>
-          <div class="choice-cards">
-            <button
-              type="button"
-              class="choice-card"
-              data-choice="blocked"
-              data-message="[Реплика взрослого для недоступной карты]"
-            >
-              Карта 1
-            </button>
-            <button
-              type="button"
-              class="choice-card"
-              data-choice="blocked"
-              data-message="[Реплика взрослого для недоступной карты]"
-            >
-              Карта 2
-            </button>
-            <button
-              type="button"
-              class="choice-card"
-              data-choice="allowed"
-              data-message="[Реплика взрослого для допустимой карты]"
-            >
-              Карта 3
+      <section
+        class="scene scene--story is-active"
+        data-scene="story"
+        id="story"
+      >
+        <div class="story">
+          <div class="story__card">
+            <img
+              src="../assets/cards/16yo.png"
+              alt=""
+            />
+          </div>
+
+          <div class="story__content">
+            <h1 class="text_h1">Выбор предметов</h1>
+
+            <p class="text_m">
+              «Это был последний учебный год в школе. Преподаватели попросили нас написать, какие предметы мы будем сдавать на ЕГЭ. Для меня это был сложный выбор, ведь от этого зависело, куда я смогу подать документы. Смотря на физику и математику в списке, я вспоминала как в детстве интересовалась астрономией и мечтала связать с этим жизнь».
+            </p>
+
+            <button type="button" class="story__next text_l" data-next="choice">
+              Дальше
             </button>
           </div>
-          <div
-            class="reaction"
-            data-reaction-box
-            hidden
-            aria-live="polite"
-          ></div>
+        </div>
+      </section>
+      <section class="scene scene--choice" data-scene="choice" id="choice">
+        <div class="choice">
+          <h2 class="choice__title text_h1">Что выбрать?</h2>
+
+          <div class="choice__cards">
+            <button
+              type="button"
+              class="choice-card choice-card--1"
+              data-choice="blocked"
+              data-message="«С таким набором только в технический университет, а там одним мальчики, тяжело тебе будет»"
+              aria-label="Физика"
+            >
+              <img src="../assets/cards/engineering.png" alt="" />
+            </button>
+
+            <button
+              type="button"
+              class="choice-card choice-card--2"
+              data-choice="blocked"
+              data-message="«Ну, это ещё ничего. В медицину пойдёшь, сможешь стать медсестрой, а потом и акушеркой. Это прекрасная профессия для женщин»."
+              aria-label="Биология"
+            >
+              <img src="../assets/cards/biological.png" alt="" />
+            </button>
+
+            <button
+              type="button"
+              class="choice-card choice-card--3"
+              data-choice="allowed"
+              data-message="«Отличный выбор! Тебе и подготовиться легко будет после литературного кружка, и учиться спокойнее»."
+              aria-label="История"
+            >
+              <img src="../assets/cards/humanities.png" alt="" />
+            </button>
+          </div>
+
+          <div class="choice__bubble" id="choiceBubble">
+            <p class="text_m" id="choiceBubbleText"></p>
+          </div>
+        </div>
+      </section>
+      <section class="scene scene--reflection" data-scene="reflection">
+        <div class="reflection__background">
+          <h2 class="choice__title text_h1">Что выбрать?</h2>
+
+          <div class="reflection__cards">
+            <img
+              class="reflection__card reflection__card--1"
+              src="../assets/cards/engineering.png"
+              alt=""
+            />
+
+            <img
+              class="reflection__card reflection__card--2"
+              src="../assets/cards/biological.png"
+              alt=""
+            />
+
+            <img
+              class="reflection__card reflection__card--3"
+              src="../assets/cards/humanities.png"
+              alt=""
+            />
+          </div>
+
+          <div class="reflection__collected">
+            <img src="../assets/cards/doll.png" alt="" />
+            <img src="../assets/cards/hand-down.png" alt="" />
+            <img src="../assets/cards/litre.png" alt="" />
+            <img src="../assets/cards/humanities.png" alt="" />
+          </div>
+        </div>
+
+        <div class="reflection__overlay" aria-hidden="true"></div>
+
+        <div class="reflection__popup">
+          <p class="text_m">
+            «Медицина совсем меня не интересовала, а физику выбирать было страшно. Наверное, литература была правильным выбором, даже преподаватели меня поддержали. Но иногда я думаю: а что, если бы я выбрала физику?»
+          </p>
+
           <button
-            class="btn"
-            data-choice-continue
-            data-next="reflection"
-            hidden
+            type="button"
+            class="reflection__next text_l"
+            data-next="myth"
           >
             Дальше
           </button>
         </div>
       </section>
-      <section class="scene" data-scene="reflection">
-        <div class="scene__content">
-          <div class="eyebrow">Её мысли</div>
-          <h2>Что она почувствовала?</h2>
-          <p>«[Вставить текст рефлексии героини]»</p>
-          <button class="btn" data-next="myth">Дальше</button>
+      <section class="scene scene--myth" data-scene="myth">
+        <div class="episode__collected">
+          <img src="../assets/cards/doll.png" alt="Кукла" />
+          <img src="../assets/cards/hand-down.png" alt="" />
+          <img src="../assets/cards/litre.png" alt="" />
+          <img src="../assets/cards/humanities.png" alt="" />
         </div>
-      </section>
-      <section class="scene" data-scene="myth">
-        <div class="scene__content">
-          <div class="eyebrow">Миф или правда?</div>
-          <h2>[Вставить утверждение для проверки]</h2>
-          <div class="answers">
-            <button class="btn answer" data-answer="myth">Миф</button
-            ><button class="btn answer" data-answer="truth">Правда</button>
+
+        <div class="myth__content">
+          <h2 class="text_h1">
+            Девушки хуже сдают ЕГЭ по точным наукам, чем юноши
+          </h2>
+
+          <div class="myth__buttons">
+            <button
+              type="button"
+              class="myth__button myth__button--myth text_l"
+              data-answer="myth"
+            >
+              Миф
+            </button>
+
+            <button
+              type="button"
+              class="myth__button myth__button--truth text_l"
+              data-answer="truth"
+            >
+              Правда
+            </button>
           </div>
         </div>
       </section>
-      <section class="scene" data-scene="explanation">
-        <div class="scene__content">
-          <h2 data-answer-title>Разбор</h2>
-          <p>[Вставить объяснение мифа и ссылку на источник]</p>
-          <a class="btn" href="episode-5.html">Следующий эпизод</a>
+      <section class="scene scene--explanation" data-scene="explanation">
+        <div class="episode__collected">
+          <img src="../assets/cards/doll.png" alt="Кукла" />
+          <img src="../assets/cards/hand-down.png" alt="" />
+          <img src="../assets/cards/litre.png" alt="" />
+          <img src="../assets/cards/humanities.png" alt="" />
+        </div>
+
+        <div class="explanation">
+          <div class="explanation__content">
+            <h2 class="text_h1" data-answer-title>Правильно! Это&nbsp;миф</h2>
+
+            <p class="text_m">
+              По данным российских исследований, девушки лучше сдают ЕГЭ практически по всем предметам, включая естественно-научные. Выбор предметов не связан со способностями: девушки чаще выбирают гуманитарные предметы, юноши — физику и информатику, но это результат социализации, а не успеваемости. Девушки, слышавшие стереотип о «неспособности к математике», начинают сомневаться в своих ответах на экзамене. Внешняя мотивация: девушки чаще ориентируются на одобрение и практическую применимость, поэтому выбирают «безопасные» направления.
+            </p>
+          </div>
+
+          <a class="explanation__next text_l" href="episode-5.html"> Дальше </a>
         </div>
       </section>
-      <div class="collected" aria-label="Собранные карты">
-        <span class="collected__card">Кукла</span
-        ><span class="collected__card">Карта эпизода 2</span
-        ><span class="collected__card">Карта эпизода 3</span>
-      </div>
-      <div class="footer-note">Не твоё · Интерактивная история</div>
+      <div class="collected" aria-label="Собранные карты"></div>
     </main>
     <script src="../js/episode.js" defer></script>
   </body>
