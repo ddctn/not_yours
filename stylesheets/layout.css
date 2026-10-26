@@ -638,3 +638,10 @@ body.is-loading {
 .explanation__content .text_h1 {
   color: var(--purple);
 }
+.menu {
+  position: relative;
+  z-index: 100;
+}
+.scene {
+  z-index: 1;
+}

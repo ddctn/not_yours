@@ -28,20 +28,6 @@ body {
   flex-direction: column;
   padding: 24px clamp(16px, 4vw, 64px);
 }
-.nav {
-  display: flex;
-  justify-content: flex-end;
-  gap: 24px;
-  position: relative;
-  z-index: 5;
-  font-size: 15px;
-}
-.nav a {
-  text-decoration: none;
-}
-.nav a:hover {
-  text-decoration: underline;
-}
 .scene {
   width: 100%;
   display: none;
@@ -500,10 +486,6 @@ body {
 @media (max-width: 600px) {
   .page {
     padding: 18px 15px;
-  }
-  .nav {
-    gap: 16px;
-    font-size: 13px;
   }
   .choice-cards {
     gap: 7px;
