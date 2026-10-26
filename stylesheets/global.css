@@ -264,6 +264,7 @@ height: 371px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 32px;
   width: 571px;
   min-height: 355px;
 
@@ -308,15 +309,6 @@ height: 371px;
   .nav {
     gap: 16px;
     font-size: 13px;
-  }
-  .scene__content {
-    padding: 12px 0 95px;
-  }
-  .scene__content h1 {
-    margin-bottom: 14px;
-  }
-  .scene__content p {
-    margin-bottom: 15px;
   }
   .choice-cards {
     gap: 7px;
