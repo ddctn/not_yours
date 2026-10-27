@@ -6,7 +6,7 @@
   const next = document.querySelector("[data-final-next]");
   const stage = document.querySelector(".final-stage");
   const closing = document.querySelector(".closing");
-  const footer = document.querySelector(".site-footer");
+  const footer = document.querySelector(".footer");
 
   const reduceMotion = window.matchMedia(
     "(prefers-reduced-motion: reduce)"

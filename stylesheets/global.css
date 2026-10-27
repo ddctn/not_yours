@@ -378,6 +378,7 @@ body {
 .choice__bubble.is-visible {
   opacity: 1;
   visibility: visible;
+  margin-left: -150px;
 }
 
 .choice__bubble .text_m {
@@ -386,6 +387,12 @@ body {
 }
 .choice-card.is-shaking {
   animation: choiceShake 0.45s ease;
+}
+.episode__collected img:nth-of-type(2), .episode__collected img:nth-of-type(4) {
+    display: block;
+    height: auto;
+    transform: rotate(-5deg);
+    width: 95px;
 }
 
 @keyframes choiceShake {

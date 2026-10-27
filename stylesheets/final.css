@@ -29,12 +29,7 @@
   width: clamp(120px, 18vw, 230px);
   height: auto;
   object-fit: contain;
-  border-radius: 24px;
-  border: 3px solid var(--black);
-
   opacity: 0;
-  /* transform: translateY(-500px) rotate(0deg); */
-
   transition:
     opacity 0.5s ease,
     transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
