@@ -146,30 +146,9 @@ body.is-loading {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border: 3px solid var(--black);
-  border-radius: 32px;
   z-index: 2;
 }
-.preloader_card__bg {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  border: 3px solid var(--black);
-  border-radius: 32px;
-  background: var(--black);
 
-  transform: translate(9px, 9px);
-  z-index: 1;
-}
-.preloader_card__bg--1 {
-  transform: translate(-6px, 0px);
-  rotate: 1deg;
-}
-.preloader_card__bg--3 {
-  transform: translate(-9px, -4px);
-  rotate: -1deg;
-}
 .preloader_card.is-visible .preloader_card__inner {
   animation: cardAppear 0.65s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
@@ -251,31 +230,8 @@ body.is-loading {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border: 3px solid var(--black);
   border-radius: 32px;
   z-index: 2;
-}
-
-.main__card-bg {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  border: 3px solid var(--black);
-  border-radius: 32px;
-  background: var(--black);
-  transform: translate(9px, 9px);
-  z-index: 1;
-}
-
-.main__card-bg--1 {
-  transform: translate(-6px, 0);
-  rotate: 1deg;
-}
-
-.main__card-bg--3 {
-  transform: translate(-4px, 3px);
-  rotate: -1deg;
 }
 
 .main__card--1 {
@@ -436,8 +392,6 @@ body.is-loading {
   width: clamp(160px, 18vw, 260px);
   aspect-ratio: 383 / 564;
   object-fit: contain;
-  border-radius: 24px;
-  border: 2px solid var(--black);
 }
 
 .reflection__card--1 {
@@ -464,8 +418,6 @@ body.is-loading {
   width: 95px;
   height: auto;
   transform: rotate(5deg);
-  border: 1px solid var(--black);
-  border-radius: 8px;
 }
 
 .reflection__overlay {
@@ -537,8 +489,6 @@ body.is-loading {
   height: auto;
   transform: rotate(5deg);
   width: 95px;
-  border: 1px solid var(--black);
-  border-radius: 8px;
 }
 
 .myth__content,

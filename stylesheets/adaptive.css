@@ -133,7 +133,7 @@
     border-radius: 50rem;
     border: 2px solid var(--black);
     padding: 20px 32px;
-    width: 239px;
+    width: 242px;
     height: 66px;
     display: flex;
     justify-content: center;
@@ -314,12 +314,12 @@
   }
 
   .reflection__collected {
-    top: 12%;
+    top: 93%;
     left: 4%;
   }
 
   .reflection__collected img {
-    width: 45px;
+    width: 95px;
   }
 
   .reflection__popup {
