@@ -23,6 +23,7 @@ body {
   background: var(--purple);
 }
 .text_h4 {
+  font-family: 'Onest';
   font-weight: 400;
   font-size: 32px;
   line-height: 120%;
@@ -324,7 +325,7 @@ body.is-loading {
   border-radius: 50rem;
   border: 3px solid var(--black);
   padding: 20px 32px;
-  width: 298px;
+  width: 302px;
   height: 78px;
   display: flex;
   justify-content: center;

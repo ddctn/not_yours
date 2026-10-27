@@ -1,7 +1,6 @@
 .about-page {
   display: flex;
   flex-direction: column;
-  margin: 0;
   min-height: 100vh;
   color: var(--black);
   background: var(--purple);
@@ -66,15 +65,14 @@ letter-spacing: -0.04em;
   background-size: 100%;
 }
 .speech--middle {
-  position: relative;
-  width: max-content;
-  margin: 22px 0 12px -9%;
-  background: #ff8949;
+  width: 430px;
+  height: 390px;
+  background: url(../assets/red_bubble.svg);
   color: white;
   transform: rotate(-11deg);
 }
 .about-panel {
-  width: 1167px;
+  width: 82vw;
   background: var(--white);
   border: 2px solid var(--black);
   border-radius: 18px;
@@ -105,23 +103,24 @@ letter-spacing: -0.04em;
   gap: 36px;
 }
 .about-panel--why {
-  margin: 0 auto 65px;
+  margin-top: 120px;
+  margin-bottom: 120px;
 }
 .about-panel--format {
   position: relative;
-  margin: 0 auto 60px;
+  margin-bottom: 120px;
   border-color: #79d8fa;
   border-width: 5px;
 }
 .about-sources {
   padding-left: 20px;
-  margin: 10px 0 30px;
+  list-style: disc;
 }
 .about-sources li {
   margin: 6px 0;
 }
 .about-note {
-  margin-top: 28px !important;
+  margin-top: 32px !important;
 }
 .about-creators {
   margin-top: 10px;
@@ -178,8 +177,12 @@ letter-spacing: -0.04em;
   gap: 28px;
   background: var(--green);
 }
-
-
+.source_link {
+  color: var(--purple);
+}
+.source_link:hover {
+  filter: brightness(0.7);
+}
 .about-footer__logo {
   font-size: clamp(40px, 4vw, 62px);
   letter-spacing: -0.05em;
@@ -247,8 +250,8 @@ letter-spacing: -0.04em;
   margin: 0;
 }
 @media (max-width: 700px) {
-  .about-page .menu {
-    margin-top: 10px;
+  .menu {
+    margin-top: 20px;
   }
   .about-layout {
     padding: 0 6% 44px;
