@@ -102,6 +102,9 @@ letter-spacing: -0.04em;
   grid-template-columns: 1fr 1fr;
   gap: 36px;
 }
+.about-columns p {
+  max-width: 520px;
+}
 .about-panel--why {
   margin-top: 120px;
   margin-bottom: 120px;
@@ -118,6 +121,7 @@ letter-spacing: -0.04em;
 }
 .about-sources li {
   margin: 6px 0;
+  transition: all 0.5s ease;
 }
 .about-note {
   margin-top: 32px !important;
@@ -222,6 +226,10 @@ letter-spacing: -0.04em;
   color: white;
   font-weight: 800;
   font-size: 22px;
+  transition: all 0.5s ease;
+}
+.about-socials a:hover {
+  filter: brightness(0.7);
 }
 .about-socials__vk,
 .about-socials__tg {
@@ -360,5 +368,36 @@ letter-spacing: -0.04em;
   .about-footer__disclaimer {
     margin-top: 24px;
     font-size: 10px;
+  }
+  .creators__cards {
+    display: flex;
+    flex-wrap: nowrap;
+
+    width: 100%;
+    gap: 16px;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    scroll-snap-type: x mandatory;
+    scroll-padding-inline: 16px;
+    -webkit-overflow-scrolling: touch;
+
+    padding: 12px 16px 24px;
+    box-sizing: border-box;
+
+    scrollbar-width: none;
+  }
+
+  .creators__cards::-webkit-scrollbar {
+    display: none;
+  }
+
+  .creators__cards .creator-card {
+    flex: 0 0 78%;
+    min-width: 0;
+    max-width: 320px;
+
+    scroll-snap-align: center;
   }
 }

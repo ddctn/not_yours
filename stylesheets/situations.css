@@ -1,0 +1,270 @@
+/* Страница «Разборы». Подключается после общих стилей и about.css. */
+.situations-page {
+  margin: 0;
+  min-height: 100vh;
+  color: #272727;
+  background: #c6a9fc;
+  overflow-x: hidden;
+}
+.situations-page *,
+.situations-page *::before,
+.situations-page *::after {
+  box-sizing: border-box;
+}
+.situations-page .menu {
+  position: relative;
+  z-index: 10;
+  width: max-content;
+  max-width: calc(100% - 24px);
+  margin: 16px auto 0;
+}
+.situations-layout {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 2% 70px;
+  position: relative;
+  isolation: isolate;
+}
+.situations-layout::before {
+  content: "";
+  position: absolute;
+  z-index: -2;
+  top: 14%;
+  left: -23%;
+  width: 93%;
+  height: 77%;
+  border: 5px solid #272727;
+  border-radius: 46% 54% 41% 59% / 65% 36% 64% 35%;
+  transform: rotate(-23deg);
+  background: #c8fa43;
+}
+.situations-layout::after {
+  content: "";
+  position: absolute;
+  z-index: -3;
+  top: 21%;
+  right: -35%;
+  width: 76%;
+  height: 67%;
+  background: #c8fa43;
+  border: 5px solid #272727;
+  border-radius: 60% 40% 50% 50%;
+  transform: rotate(16deg);
+}
+.situations-hero {
+  text-align: center;
+  padding: 35px 20px 42px;
+}
+.situations-hero h1 {
+  margin: 0 auto 16px;
+  font-size: clamp(56px, 8.2vw, 118px);
+  font-weight: 500;
+  letter-spacing: -0.065em;
+  line-height: 1.03;
+}
+.situations-hero p {
+  max-width: 1060px;
+  margin: 0 auto;
+  font-size: clamp(16px, 1.55vw, 22px);
+  line-height: 1.24;
+}
+.situations-grid {
+  display: grid;
+  gap: 20px;
+}
+.situation-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  min-height: 315px;
+}
+.situation-card,
+.situation-effect {
+  border-radius: 18px;
+  overflow: hidden;
+}
+.situation-card {
+  --card-bg: #fa89bc;
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 40px;
+  background: var(--card-bg);
+  border: 2px solid #70d4fc;
+}
+.situation-card::before,
+.situation-card::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: #f6f4e9;
+  border: 3px solid #272727;
+}
+.situation-card::before {
+  width: 70%;
+  height: 55%;
+  top: -31%;
+  left: -20%;
+  border-radius: 50%;
+  transform: rotate(-23deg);
+}
+.situation-card::after {
+  width: 74%;
+  height: 68%;
+  right: -27%;
+  bottom: -50%;
+  border-radius: 50%;
+  transform: rotate(14deg);
+}
+.situation-card--pink {
+  --card-bg: #f58dbd;
+  border-color: #70d4fc;
+}
+.situation-card--orange {
+  --card-bg: #ff7e55;
+  border-color: #f58dbd;
+}
+.situation-card--blue {
+  --card-bg: #70d4fc;
+  border-color: #c8fa43;
+}
+.situation-card--purple {
+  --card-bg: #c6a9fc;
+  border-color: #ff7e55;
+}
+.situation-card--lime {
+  --card-bg: #c8fa43;
+  border-color: #272727;
+}
+.situation-card__body {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+.situation-card__eyebrow {
+  display: block;
+  margin-bottom: 12px;
+  text-align: center;
+  color: #fff;
+  font-size: clamp(14px, 1.12vw, 17px);
+}
+.situation-card h2 {
+  max-width: 520px;
+  margin: 0 auto 25px;
+  font-weight: 500;
+  font-size: clamp(27px, 2.6vw, 40px);
+  line-height: 1.12;
+  letter-spacing: -0.025em;
+  text-align: center;
+}
+.situation-card p {
+  max-width: 520px;
+  margin: 0 auto;
+  font-size: clamp(16px, 1.48vw, 21px);
+  line-height: 1.19;
+}
+.situation-effects {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 9px;
+  --effect-stroke: #70d4fc;
+}
+.situation-effects--pink {
+  --effect-stroke: #70d4fc;
+}
+.situation-effects--orange {
+  --effect-stroke: #f58dbd;
+}
+.situation-effects--blue {
+  --effect-stroke: #c6a9fc;
+}
+.situation-effects--purple {
+  --effect-stroke: #ff7e55;
+}
+.situation-effects--lime {
+  --effect-stroke: #272727;
+}
+.situation-effect {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 29px;
+  background: #f6f4e9;
+  border: 3px solid var(--effect-stroke);
+}
+.situation-effect h3 {
+  margin: 0 0 8px;
+  font-size: clamp(13px, 1.2vw, 16px);
+  color: #c6a9fc;
+  text-align: center;
+  font-weight: 400;
+}
+.situation-effect p {
+  margin: 0;
+  font-size: clamp(15px, 1.35vw, 18px);
+  line-height: 1.23;
+}
+.situations-page .about-footer {
+  margin-top: 0;
+}
+@media (max-width: 700px) {
+  .situations-page .menu {
+    margin-top: 10px;
+  }
+  .situations-layout {
+    padding: 0 14px 55px;
+  }
+  .situations-hero {
+    padding: 45px 5px 35px;
+  }
+  .situations-hero h1 {
+    font-size: clamp(48px, 11vw, 74px);
+    margin-bottom: 20px;
+  }
+  .situations-hero p {
+    font-size: 17px;
+    line-height: 1.34;
+  }
+  .situations-grid {
+    gap: 22px;
+  }
+  .situation-pair {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    min-height: 0;
+  }
+  .situation-card {
+    min-height: 275px;
+    padding: 28px 25px;
+  }
+  .situation-card h2 {
+    font-size: clamp(27px, 7vw, 37px);
+    margin-bottom: 18px;
+  }
+  .situation-card p {
+    font-size: 17px;
+  }
+  .situation-effects {
+    gap: 8px;
+  }
+  .situation-effect {
+    padding: 24px 20px;
+    min-height: 175px;
+  }
+  .situation-effect h3 {
+    font-size: 14px;
+  }
+  .situation-effect p {
+    font-size: 16px;
+    line-height: 1.32;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+  }
+}
