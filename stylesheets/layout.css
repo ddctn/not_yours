@@ -379,11 +379,33 @@ body.is-loading {
 }
 .main_h1 {
   margin-top: 2.778vw;
-  font-size: 64px;
+  font-size: 180px;
   line-height: 92%;
   letter-spacing: -0.04em;
 }
-
+.main_green_bubble {
+  position: absolute;
+  width: 370px;
+  left: 2%;
+}
+.main_bubble {
+  position: absolute;
+  text-align: center;
+  font-size: 52px;
+  line-height: 80%;
+  letter-spacing: -0.04em;
+  width: 406px;
+  background: url(../assets/bubble.svg);
+  height: 180px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  right: -6%;
+  background-position: center;
+  padding-top: 40px;
+}
+.main_bubble p {
+  margin-left: -50px;
+}
 .scene--reflection {
   position: absolute;
   inset: 0;
