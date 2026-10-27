@@ -1,13 +1,100 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="shortcut icon" href="./assets/close.svg" type="image/x-icon">
-  <link rel="stylesheet" href="../stylesheets/style.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>О проекте — Не твоё</title>
+  <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon" />
+  <link rel="stylesheet" href="./stylesheets/global.css" />
+  <link rel="stylesheet" href="./stylesheets/style.css" />
+  <link rel="stylesheet" href="./stylesheets/about.css" />
 </head>
-<body>
+<body class="about-page">
+  <nav class="menu" aria-label="навигация">
+    <a href="./about.html" class="menu_item" aria-current="page">о проекте</a>
+    <a href="./index.html" class="menu_item">история</a>
+    <a href="./situations.html" class="menu_item">разборы</a>
+  </nav>
+  <main class="about-layout">
+    <header class="about-hero" aria-labelledby="about-title">
+      <span class="speech speech--left">Физика слишком<br />сложная для тебя</span>
+      <span class="speech speech--right">Ну ты же<br />девочка!</span>
+      <h1 id="about-title" class="about-hero__title">Не твоё</h1>
+      <p class="about-hero__lead text_h4">Это&nbsp;интерактивный сайт-исследование о&nbsp;том, как&nbsp;родители и&nbsp;педагоги&nbsp;—&nbsp;часто неосознанно — влияют на&nbsp;выбор профессии девушками</p>
+    </header>
 
+    <section class="about-panel about-panel--why" aria-labelledby="why-title">
+      <h2 id="why-title">Почему мы сделали «Не твоё»</h2>
+      <div class="about-columns">
+        <div>
+          <p>Мы заметили, что большинство проектов о женщинах в STEM работают с девушками: показывают успешные истории, дают ролевые модели, вдохновляют. Но этого недостаточно.</p>
+          <p>Потому что выбор профессии формируется задолго до того, как девушка начинает его осознавать.</p>
+        </div>
+        <div>
+          <p>И формируют его — часто неосознанно — те, кто рядом: родители, педагоги, окружение.</p>
+          <p>Мы решили работать с теми, кто влияет, а не только с теми, на кого влияют. Не обвинять, а показывать механизм. Не давать готовых решений, а давать возможность увидеть себя со стороны.</p>
+        </div>
+      </div>
+    </section>
+
+    <span class="speech speech--middle">Это для меня</span>
+
+    <section class="about-panel about-panel--format" aria-labelledby="format-title">
+      <h2 id="format-title">Формат проекта</h2>
+      <div class="about-columns">
+        <div>
+          <p>Мы не рассказываем истории успеха и не даём профориентацию. Мы показываем причинно-следственную цепочку: как повседневные слова, оценки и ожидания взрослых формируют у девушки представление о том, какие профессии ей «подходят».</p>
+          <p>Наш основной инструмент — интерактивная игра-расклад. Игрок проходит путь девушки от детства до выбора профессии от первого лица: делает её выборы, слышит реакции взрослых и видит, как интерес превращается в «это не для меня».</p>
+        </div>
+        <div>
+          <p>Мы опираемся на научные исследования и статистику:</p>
+          <ul class="about-sources">
+            <li>OECD (2025), <i>Gender Equality in a Changing World</i></li>
+            <li>OECD PISA 2022</li>
+            <li>НИУ ВШЭ (2026) — данные о женщинах в науке</li>
+            <li>Scholink (2023) — исследование взаимодействия учителей с учениками</li>
+            <li>Sadker &amp; Sadker (1994) — классическое исследование гендерного неравенства в классе</li>
+          </ul>
+          <p class="about-note">Мы не используем реальные истории.<br />Все персонажи — собирательные.<br />Мы не работаем с чувствительными данными.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-creators" aria-labelledby="creators-title">
+      <div class="about-panel about-panel--creators">
+        <h2 id="creators-title">Создательницы</h2>
+        <p>Этот проект — часть нашей исследовательской работы о том, как гендерные стереотипы влияют на профессиональный выбор. Мы верим, что изменение начинается с осознания. Не с обвинений, не с морализаторства — а с возможности увидеть себя со стороны и задать себе вопрос: «А что, если бы я тогда не сказал „это не для тебя“?»</p>
+      </div>
+      <div class="creator-cards" aria-label="Команда проекта">
+        <img src="./assets/creators/eva.png" alt="Портрет Эвы" loading="lazy" />
+        <img src="./assets/creators/masha.png" alt="Портрет Маши" loading="lazy" />
+        <img src="./assets/creators/natasha.png" alt="Портрет Наташи" loading="lazy" />
+      </div>
+    </section>
+  </main>
+
+  <footer class="about-footer">
+    <div class="about-footer__brand">
+      <span class="about-footer__logo">Не твоё</span>
+      <nav class="about-footer__links" aria-label="Навигация в подвале">
+        <a href="./index.html">Игра</a>
+        <a href="./about.html">О проекте</a>
+        <a href="./situations.html">Советы</a>
+      </nav>
+    </div>
+    <div class="about-footer__social">
+      <p>Подписывайтесь<br />на наши соцсети</p>
+      <!-- Замените # фактическими ссылками на ваши страницы -->
+      <div class="about-socials">
+        <a class="about-socials__vk" href="#" aria-label="ВКонтакте">vk</a>
+        <a class="about-socials__tt" href="#" aria-label="TikTok">♪</a>
+        <a class="about-socials__other" href="#" aria-label="Дзен">✦</a>
+        <a class="about-socials__pin" href="#" aria-label="Pinterest">P</a>
+        <a class="about-socials__inst" href="#" aria-label="Instagram">inst*</a>
+        <a class="about-socials__tg" href="#" aria-label="Telegram">➤</a>
+      </div>
+    </div>
+    <p class="about-footer__disclaimer">*Instagram принадлежит компании Meta Platforms Inc., признанной экстремистской организацией, деятельность которой запрещена в России.</p>
+  </footer>
 </body>
 </html>
