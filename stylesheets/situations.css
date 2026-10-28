@@ -152,6 +152,9 @@
 .situation-effects--lime {
   --effect-stroke: #272727;
 }
+.situation-card--lime .situation-card__eyebrow {
+  color: var(--purple);
+}
 .situation-effect {
   display: flex;
   flex-direction: column;
