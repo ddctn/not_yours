@@ -77,6 +77,9 @@
     background-repeat: no-repeat;
     background-size: 350%;
     padding-top: 40px;
+    overflow-x: hidden;
+  }
+  .index_body {
     overflow-y: hidden;
   }
   .main_h1 {
