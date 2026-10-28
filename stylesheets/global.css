@@ -466,9 +466,9 @@ body {
   z-index: 20;
 }
 @media (max-width: 600px) {
-  .page {
+  /* .page {
     padding: 18px 15px;
-  }
+  } */
   .choice-cards {
     gap: 7px;
   }
