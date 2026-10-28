@@ -18,9 +18,14 @@ body {
   width: 100%;
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background: var(--purple);
+  background: url(../assets/background.png);
+  background-position: center 75%;
+  background-repeat: no-repeat;
+  background-size: 130%;
 }
 .text_h4 {
   font-family: 'Onest';
@@ -199,11 +204,6 @@ body.is-loading {
   width: 100%;
   height: 100dvh;
   overflow: hidden;
-  background: var(--purple);
-  background: url(../assets/background.png);
-  background-position: center 75%;
-  background-repeat: no-repeat;
-  background-size: 130%;
 }
 
 .main__cards {
@@ -708,4 +708,9 @@ body.is-loading {
   background-repeat: no-repeat;
   background-size: 200%;
   background-position: 29% 67%;
+}
+.index_body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

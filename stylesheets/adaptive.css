@@ -53,7 +53,7 @@
     font-size: 38px;
     width: 330px;
     right: -6%;
-    top: 13%;
+    top: 0;
     background-size: 105%;
     padding-top: 55px;
     padding-left: 14px;
@@ -71,15 +71,16 @@
   .preloader {
     background: url(../assets/bg_mob.png), var(--purple);
   }
-  .main {
-    background: url(../assets/bg_mob.png);
-    background-position: center 63%;
+  body {
+    background: url(../assets/bg_mob.png), var(--purple);
+    background-position: center 80%;
     background-repeat: no-repeat;
     background-size: 350%;
     padding-top: 40px;
+    overflow-y: hidden;
   }
   .main_h1 {
-    margin-top: 170px;
+    margin-top: 130px;
     font-size: 112px;
   }
   .text_h4 {

@@ -231,9 +231,9 @@
   .final-stage {
     min-height: 100dvh;
   }
-.final-copy.is-visible {
+  .final-copy.is-visible {
     margin-top: -60%;
-}
+  }
   .final-cards {
     position: absolute;
     display: block;
