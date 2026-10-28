@@ -12,7 +12,10 @@
   justify-content: center;
   overflow: hidden;
 }
-
+.final_body {
+  display: flex;
+  flex-direction: column;
+}
 .final-cards {
   position: absolute;
   display: flex;
@@ -148,7 +151,7 @@
 }
 
 .closing__content {
-  width: min(740px, 100%);
+  width: 1158px;
   padding: 30px 40px;
 
   background: #f6f4e9;
@@ -233,7 +236,9 @@
   .final-cards.is-down {
     transform: translateY(180px);
   }
-
+.closing__content {
+    width: 90vw;
+}
   .final-copy {
     padding: 22px;
   }

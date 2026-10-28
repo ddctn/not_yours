@@ -378,11 +378,11 @@ body {
 .choice__bubble.is-visible {
   opacity: 1;
   visibility: visible;
-  margin-left: -150px;
+  /* margin-left: -40px; */
 }
 
 .choice__bubble .text_m {
-  margin: 0;
+  margin-top: 0%;
   max-width: 275px;
 }
 .choice-card.is-shaking {
@@ -424,10 +424,6 @@ body {
 .choice-card.is-selected {
   z-index: 15;
   scale: 1.12;
-}
-
-.choice__bubble {
-  z-index: 20;
 }
 
 .scene:not(.is-active) {
@@ -476,6 +472,9 @@ body {
   .choice-cards {
     gap: 7px;
   }
+  .choice__bubble .text_m {
+    font-size: 16px;
+  }
   .choice-card {
     width: min(29vw, 145px);
     border-radius: 13px;
@@ -489,6 +488,41 @@ body {
     height: 56px;
     font-size: 9px;
   }
+  .choice__bubble {
+  position: absolute;
+
+  top: 26%;
+  right: -13%;
+
+  width: 55vw;
+  aspect-ratio: 480 / 160;
+
+  background-image: url("../assets/bubble.svg");
+  background-size: 200%;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* padding: 40px 20px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease;
+}
+.choice__bubble .text_m {
+  margin-top: -30%;
+  max-width: 275px;
+}
   .reaction {
     padding: 10px 12px;
     min-height: 50px;

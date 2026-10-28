@@ -621,3 +621,91 @@ body.is-loading {
 .scene {
   z-index: 1;
 }
+
+.about-footer__logo {
+  font-size: clamp(40px, 4vw, 62px);
+  letter-spacing: -0.05em;
+  line-height: 1;
+}
+.about-footer__links {
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+.about-footer__links a {
+  font-size: clamp(22px, 2.4vw, 32px);
+  line-height: 1.2;
+  text-decoration: none;
+  color: inherit;
+}
+.about-footer__social p {
+  margin: 0 0 30px;
+  font-size: clamp(19px, 2vw, 28px);
+}
+.about-socials {
+  display: grid;
+  grid-template-columns: repeat(3, 82px);
+  gap: 7px;
+}
+.about-socials a {
+  width: 82px;
+  height: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  font-weight: 800;
+  font-size: 22px;
+  transition: all 0.5s ease;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.about-socials a:hover {
+  filter: brightness(0.7);
+}
+.about-socials__vk {
+  background: url(../assets/socials/vk.svg);
+}
+.about-socials__tg {
+  background: url(../assets/socials/tg.svg);
+}
+.about-socials__tt {
+  background: url(../assets/socials/tiktok.svg);
+}
+.about-socials__other {
+  background: url(../assets/socials/dzen.svg);
+}
+.about-socials__pin {
+  background: url(../assets/socials/pin.svg);
+}
+.about-socials__inst {
+  background: url(../assets/socials/inst.svg);
+}
+.about-footer__disclaimer {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
+.about-footer {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  max-width: 1360px;
+  width: calc(100% - 60px);
+  margin: 0 auto 24px;
+  border: 3px solid var(--black);
+  border-radius: 19px;
+  padding: 27px 38px 18px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 28px;
+  background: url(../assets/bg_green.png) var(--white);
+  background-repeat: no-repeat;
+  background-size: 200%;
+  background-position: 29% 67%;
+}
