@@ -101,13 +101,12 @@
   .text_h3 {
     font-size: 28px;
   }
-     .menu {
-        border: 2px solid var(--black);
-        width: 358px;
-        gap: 16px;
-        height: 54px;
-        margin-top: 40px;
-    }
+  .menu {
+    border: 2px solid var(--black);
+    width: 358px;
+    gap: 16px;
+    height: 54px;
+  }
   .main_h3 {
     max-width: 250px;
     text-align: center;
@@ -283,20 +282,20 @@
     transform: translate(-25%, -30%) rotate(16deg);
     z-index: 3;
   }
-      .choice__bubble {
-        top: 14%;
-        left: 50%;
-        width: 100vw;
-        height: 40%;
-        background-size: 122%;
-        transform: translateX(-50%);
-        aspect-ratio: 480 / 160;
-        padding-left: 33px;
-    }
+  .choice__bubble {
+    top: 14%;
+    left: 50%;
+    width: 100vw;
+    height: 40%;
+    background-size: 122%;
+    transform: translateX(-50%);
+    aspect-ratio: 480 / 160;
+    padding-left: 33px;
+  }
   .reflection__card {
     width: min(52vw, 220px);
   }
-.about-footer {
+  .about-footer {
     width: calc(100% - 24px);
     margin-bottom: 12px;
     padding: 23px 22px 15px;
@@ -383,6 +382,44 @@
 
   .episode__collected img {
     width: 95px;
+  }
+
+  .episode__collected,
+  .reflection__collected {
+    display: flex;
+    align-items: flex-start;
+    overflow: visible;
+    width: max-content;
+    max-width: 94vw;
+    z-index: 4;
+  }
+
+  .episode__collected img,
+  .episode__collected img:nth-of-type(2),
+  .episode__collected img:nth-of-type(4),
+  .reflection__collected img {
+    position: relative;
+    flex: 0 0 auto;
+    width: clamp(64px, 23vw, 95px);
+    height: auto;
+    margin-left: -34px;
+    transform: none;
+    rotate: 5deg;
+  }
+
+  .episode__collected img:first-child,
+  .reflection__collected img:first-child {
+    margin-left: 0;
+  }
+
+  .episode__collected img:nth-child(odd),
+  .reflection__collected img:nth-child(odd) {
+    rotate: -7deg;
+  }
+
+  .episode__collected img:nth-child(even),
+  .reflection__collected img:nth-child(even) {
+    rotate: 7deg;
   }
 
   .myth__content,
