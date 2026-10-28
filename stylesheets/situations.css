@@ -2,7 +2,10 @@
   margin: 0;
   min-height: 100vh;
   color: var(--black);
-  background: var(--purple);
+  background: url(../assets/bg_green.svg) var(--purple);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 200%;
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
@@ -63,35 +66,35 @@
   border: 2px solid var(--blue);
 }
 .situation-card--pink {
-  background: var(--white) url(../assets/bg_pink.png);
+  background: var(--white) url(../assets/bg_pink.svg);
   background-size: 200%;
   background-position: center 60%;
   background-repeat: no-repeat;
   border-color: #70d4fc;
 }
 .situation-card--orange {
-  background: var(--white) url(../assets/bg_red.png);
+  background: var(--white) url(../assets/bg_red.svg);
   background-size: 200%;
   background-position: center 60%;
   background-repeat: no-repeat;
   border-color: #f58dbd;
 }
 .situation-card--blue {
-  background: var(--white) url(../assets/bg_blue.png);
+  background: var(--white) url(../assets/bg_blue.svg);
   background-size: 380%;
   background-position: 66% 70%;
   background-repeat: no-repeat;
   border-color: #c8fa43;
 }
 .situation-card--purple {
-  background: var(--white) url(../assets/bg_purple.png);
+  background: var(--white) url(../assets/bg_purple.svg);
   background-size: 210%;
   background-position: 46% 58%;
   background-repeat: no-repeat;
   border-color: #ff7e55;
 }
 .situation-card--lime {
-  background: var(--white) url(../assets/bg_green.png);
+  background: var(--white) url(../assets/bg_green.svg);
   background-size: 200%;
   background-position: 42% 58%;
   background-repeat: no-repeat;
