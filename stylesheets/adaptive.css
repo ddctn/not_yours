@@ -53,7 +53,7 @@
     font-size: 38px;
     width: 330px;
     right: -6%;
-    top: 16%;
+    top: 13%;
     background-size: 105%;
     padding-top: 55px;
     padding-left: 14px;
@@ -77,6 +77,10 @@
     background-repeat: no-repeat;
     background-size: 350%;
     padding-top: 40px;
+  }
+  .main_h1 {
+    margin-top: 170px;
+    font-size: 112px;
   }
   .text_h4 {
     font-size: 24px;
@@ -109,9 +113,6 @@
   }
   .main__card {
     bottom: 15%;
-  }
-  .main_h1 {
-    margin-top: 220px;
   }
   .buttons_block {
     margin-top: 24px;
@@ -271,7 +272,7 @@
   }
   .choice-card--3 {
     top: 40%;
-    left: 72%;
+    left: 79%;
     transform: translate(-66%, -32%) rotate(6deg);
     z-index: 2;
   }
