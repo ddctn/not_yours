@@ -3,7 +3,10 @@
   flex-direction: column;
   min-height: 100vh;
   color: var(--black);
-  background: var(--purple);
+  background: url(../assets/bg_green.png) var(--purple);
+    background-position: center 75%;
+    background-repeat: no-repeat;
+    background-size: 190%;
   overflow-x: hidden;
 }
 .about-page *,
