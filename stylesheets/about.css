@@ -301,6 +301,7 @@ letter-spacing: -0.04em;
   .about-hero {
     min-height: 0;
     padding: 46px 0 70px;
+    gap: 20px;
   }
   .about-hero__title {
     font-size: clamp(55px, 15vw, 95px);
@@ -380,6 +381,9 @@ letter-spacing: -0.04em;
   .about-footer__links a {
     font-size: 24px;
   }
+  .creator-cards img {
+    width: 338px;
+}
   .about-footer__social p {
     margin-bottom: 12px;
     font-size: 20px;
@@ -423,7 +427,8 @@ letter-spacing: -0.04em;
     box-sizing: border-box;
 
     gap: 16px;
-    padding: 20px 11% 28px;
+    padding: 0;
+    padding-top: 40px;
 
     overflow-x: auto;
     overflow-y: hidden;
@@ -435,7 +440,9 @@ letter-spacing: -0.04em;
 
     scrollbar-width: none;
   }
-
+  .text_l {
+   font-size: 20px;
+  }
   .creator-cards::-webkit-scrollbar {
     display: none;
   }
