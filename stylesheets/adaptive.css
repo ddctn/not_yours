@@ -253,7 +253,6 @@
 
   .story__next {
     flex-shrink: 0;
-    margin-top: 24px;
   }
 
   .choice__title {
