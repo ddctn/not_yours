@@ -11,9 +11,6 @@
 .about-page *::after {
   box-sizing: border-box;
 }
-.menu {
-  margin-top: 32px;
-}
 .about-layout {
   display: flex;
   flex-direction: column;
@@ -205,9 +202,6 @@ letter-spacing: -0.04em;
   filter: brightness(0.7);
 }
 @media (max-width: 700px) {
-  .menu {
-    margin-top: 20px;
-  }
   .about-layout {
     padding: 0 6% 44px;
     width: 100%;

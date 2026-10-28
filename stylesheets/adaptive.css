@@ -266,7 +266,7 @@
   }
 
   .choice-card {
-    width: min(52vw, 220px);
+    width: min(45vw, 200px);
   }
   .choice-card--1 {
     top: 45%;
@@ -275,13 +275,13 @@
     z-index: 3;
   }
   .choice-card--3 {
-    top: 38%;
-    left: 87%;
-    transform: translate(-66%, -32%) rotate(6deg);
+    top: 40%;
+    left: 82%;
+    transform: translate(-68%, -32%) rotate(6deg);
     z-index: 2;
   }
   .choice-card--2 {
-    top: 72%;
+    top: 69%;
     left: 55%;
     transform: translate(-25%, -30%) rotate(16deg);
     z-index: 3;
@@ -289,13 +289,16 @@
   .choice__bubble {
     top: 14%;
     left: 50%;
-    width: 100vw;
-    height: 40%;
-    background-size: 122%;
+    width: 464px;
+    height: 233px;
+    background-size: 100%;
     transform: translateX(-50%);
     aspect-ratio: 480 / 160;
     padding-left: 33px;
-  }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
   .reflection__card {
     width: min(52vw, 220px);
   }

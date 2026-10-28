@@ -13,13 +13,6 @@
 .situations-page *::after {
   box-sizing: border-box;
 }
-.situations-page .menu {
-  position: relative;
-  z-index: 10;
-  width: max-content;
-  max-width: calc(100% - 24px);
-  margin: 32px auto 0;
-}
 .situations-layout {
   max-width: 1440px;
   margin: 0 auto;

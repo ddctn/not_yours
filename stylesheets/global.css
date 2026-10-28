@@ -520,7 +520,6 @@ body {
     visibility 0.3s ease;
 }
 .choice__bubble .text_m {
-  margin-top: -30%;
   max-width: 275px;
 }
   .reaction {
