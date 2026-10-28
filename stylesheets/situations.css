@@ -226,6 +226,25 @@
     font-size: 16px;
     line-height: 1.32;
   }
+  .situation-card--pink {
+    background-size: 350%;
+    background-position: center 59%;
+  }
+  .situation-card--orange {
+    background-size: 279%;
+}
+.situation-card--blue {
+    background-size: 430%;
+    background-position: 65% 66%;
+}
+.situation-card--purple {
+    background-size: 350%;
+    background-position: 46% 57%;
+}
+.situation-card--lime {
+    background-size: 350%;
+    background-position: 35% 56%;
+}
 }
 @media (prefers-reduced-motion: reduce) {
   *,
