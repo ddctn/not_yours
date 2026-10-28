@@ -68,26 +68,40 @@
   justify-content: center;
   padding: 32px 40px;
   border: 2px solid var(--blue);
-  background-repeat: no-repeat;
 }
 .situation-card--pink {
   background: var(--white) url(../assets/bg_pink.png);
+  background-size: 200%;
+  background-position: center 60%;
+  background-repeat: no-repeat;
   border-color: #70d4fc;
 }
 .situation-card--orange {
   background: var(--white) url(../assets/bg_red.png);
+  background-size: 200%;
+  background-position: center 60%;
+  background-repeat: no-repeat;
   border-color: #f58dbd;
 }
 .situation-card--blue {
   background: var(--white) url(../assets/bg_blue.png);
+  background-size: 380%;
+  background-position: 66% 70%;
+  background-repeat: no-repeat;
   border-color: #c8fa43;
 }
 .situation-card--purple {
   background: var(--white) url(../assets/bg_purple.png);
+  background-size: 210%;
+  background-position: 46% 58%;
+  background-repeat: no-repeat;
   border-color: #ff7e55;
 }
 .situation-card--lime {
   background: var(--white) url(../assets/bg_green.png);
+  background-size: 200%;
+  background-position: 42% 58%;
+  background-repeat: no-repeat;
   border-color: #272727;
 }
 .situation-card__body {
