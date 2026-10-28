@@ -76,7 +76,6 @@
     background-position: center 80%;
     background-repeat: no-repeat;
     background-size: 350%;
-    padding-top: 40px;
     overflow-x: hidden;
   }
   .index_body {
@@ -278,7 +277,7 @@
     top: 40%;
     left: 82%;
     transform: translate(-68%, -32%) rotate(6deg);
-    z-index: 2;
+    z-index: 3;
   }
   .choice-card--2 {
     top: 69%;
@@ -291,7 +290,7 @@
     left: 50%;
     width: 464px;
     height: 233px;
-    background-size: 100%;
+    background-size: 99%;
     transform: translateX(-50%);
     aspect-ratio: 480 / 160;
     padding-left: 33px;
