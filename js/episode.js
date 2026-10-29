@@ -35,7 +35,6 @@
   const bubble = document.getElementById("choiceBubble");
   const bubbleText = document.getElementById("choiceBubbleText");
 
-  // Поддержка старого блока реакции, если он остался
   const oldReaction = document.querySelector("[data-reaction-box]");
   const oldContinue = document.querySelector("[data-choice-continue]");
 
