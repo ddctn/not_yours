@@ -38,7 +38,9 @@
   .main__card--2 {
     transform: translate(-50%, 65%) rotate(5deg);
   }
-
+ .episode_body {
+    overflow-y: auto;
+}
   .main__card--3 {
     transform: translate(calc(-50% + 45px), 70%) rotate(-3deg);
   }
@@ -168,7 +170,7 @@
     padding: 32px 20px;
     border: 1.5px solid var(--black);
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
 
     width: min(88vw, 339px);
@@ -256,7 +258,7 @@
   }
 
   .choice__title {
-    top: 18%;
+    top: 5%;
     width: 82%;
     padding: 12px 16px;
     white-space: normal;
@@ -267,19 +269,23 @@
     width: min(45vw, 200px);
   }
   .choice-card--1 {
-    top: 45%;
+    top: 35%;
     left: 27%;
     transform: translate(-54%, -34%) rotate(-12deg);
     z-index: 3;
   }
+  .episode__collected img {
+     margin-top: 0 !important;
+  }
+
   .choice-card--3 {
-    top: 40%;
-    left: 82%;
+    top: 30%;
+    left: 77%;
     transform: translate(-68%, -32%) rotate(6deg);
     z-index: 3;
   }
   .choice-card--2 {
-    top: 69%;
+    top: 57%;
     left: 55%;
     transform: translate(-25%, -30%) rotate(16deg);
     z-index: 3;
@@ -381,8 +387,8 @@
   }
 
   .episode__collected {
-    top: 93%;
-    left: 4%;
+    top: 95%;
+    left: 10%;
   }
 
   .episode__collected img {
